@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                num++;
+                num=num+1;
                 price(1);
             }
         });
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(bill > 0)
                 {
-                    num--;
+                    num=num-1;
                     price(-1);
 
                 }
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void price(int n){
-        bill = bill+50*n;
+        bill = bill+100*n;
         amount.setText(""+num);
     }
 
